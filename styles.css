@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: var(--tg-theme-bg-color)
+    background-color: var(--tg-theme-bg-color);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -30,11 +30,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(
-        var(--hue, 200), 
-        var(--saturation, 1%), 
+        var(--hue, 200),
+        var(--saturation, 1%),
         calc(var(--lightness-offset, 0%) + var(--lightness, 51%))
     );
-    color: var(--tg-theme-text-color);
+    color: white;
     fill: white;
     text-transform: uppercase;
     border-radius: .25em;
@@ -77,15 +77,15 @@ body {
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    grid-template-columns: repeat(5, 5em);
-    grid-template-rows: repeat(6, 5em);
+    grid-template-columns: repeat(5, 4em);
+    grid-template-rows: repeat(6, 4em);
     gap: .25em;
     margin-bottom: 1em;
 }
 
 .tile {
     font-size: 2em;
-    color: white;
+    color: var(--tg-theme-text-color);
     border: .05em solid hsl(240, 2%, 23%);
     text-transform: uppercase;
     font-weight: bold;
