@@ -22,6 +22,9 @@ const msOffset = Date.now() - offsetFromDate
 const dayOffset = msOffset / 1000 / 60 / 60 / 24 // millisecond value to day value
 var targetWord = targetWords[Math.floor(dayOffset)]
 var startTime = performance.now()
+let tg = window.Telegram.WebApp
+tg.expand()
+tg.sendData('12378')
 
 startGame()
 
@@ -243,12 +246,15 @@ function shakeTiles(tiles) {
 }
 
 function checkWinLose(guess, tiles) {
+
+
     if (guess === targetWord)
     {
         showAlert("You Win!", 5000)
         danceTiles(tiles)
         stopInteraction()
         restartButtonElement.classList.add('show')
+        tg.close()
         return
     }
 
@@ -257,10 +263,10 @@ function checkWinLose(guess, tiles) {
     {
         showAlert("You Lost! The word was: " + targetWord.toUpperCase(), null)
         restartButtonElement.classList.add('show')
+        tg.close()
         stopInteraction()
     }
-    let tg = window.Telegram.WebApp
-    tg.close()
+
 }
 
 function danceTiles(tiles) {
