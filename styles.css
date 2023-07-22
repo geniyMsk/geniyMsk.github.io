@@ -19,6 +19,7 @@ body {
     grid-auto-rows: 3em;
     gap: .25em;
     justify-content: center;
+
 }
 
 .key {
@@ -75,8 +76,8 @@ body {
 .guess-grid {
     display: grid;
     justify-content: center;
-    align-content: center;
-    flex-grow: 1;
+    align-content: top;
+    
     grid-template-columns: repeat(5, 4em);
     grid-template-rows: repeat(6, 4em);
     gap: .25em;
