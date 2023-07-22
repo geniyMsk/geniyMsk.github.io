@@ -5,13 +5,18 @@
 
 body {
     background-color: var(--tg-theme-bg-color);
-    display: flex;
+    display: grid;
+    flex-grow: 1;
+    align-content: center;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     padding: 1em;
     font-size: clamp(.5rem, 2.5vmin, 1.5rem);
+
 }
+
+
 
 .keyboard {
     display: grid;
@@ -19,6 +24,7 @@ body {
     grid-auto-rows: 3em;
     gap: .25em;
     justify-content: center;
+
 
 }
 
@@ -77,7 +83,7 @@ body {
     display: grid;
     justify-content: center;
     align-content: top;
-    
+
     grid-template-columns: repeat(5, 4em);
     grid-template-rows: repeat(6, 4em);
     gap: .25em;
