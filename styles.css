@@ -20,8 +20,8 @@ body {
 
 .keyboard {
     display: grid;
-    grid-template-columns: repeat(24, minmax(auto, 1.25em));
-    grid-auto-rows: 3em;
+    grid-template-columns: repeat(24, minmax(auto, 1.6em));
+    grid-auto-rows: 5em;
     gap: .25em;
     justify-content: center;
 
