@@ -5,9 +5,8 @@
 
 body {
     background-color: var(--tg-theme-bg-color);
-    display: grid;
-    flex-grow: 1;
-    align-content: center;
+    display: flex;
+
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
@@ -20,7 +19,7 @@ body {
 
 .keyboard {
     display: grid;
-    grid-template-columns: repeat(24, minmax(auto, 1.6em));
+    grid-template-columns: repeat(25, minmax(auto, 1.6em));
     grid-auto-rows: 5em;
     gap: .25em;
     justify-content: center;
